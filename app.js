@@ -8,6 +8,12 @@ const botaoCadastra = document.querySelector('.botao_adc')
 const listaAtividades = document.querySelector('.lista_atividades')
 const botaoLimparLista = document.querySelector('.botao_del_todos')
 
+window.addEventListener('load', () => informacao())
+
+function informacao() {
+    alert(`Aproveite para anotar todas as suas atividades diárias.`)
+}
+
 paleta1.addEventListener('click', () => definePaleta('seagreen'))
 paleta2.addEventListener('mousemove', () => definePaleta('slateblue'))
 paleta3.addEventListener('dblclick', () => definePaleta('tomato'))
